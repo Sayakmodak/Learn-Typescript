@@ -25,7 +25,7 @@ interface Person {
 }
 
 const person : Person = {
-    name: "ABC",
+    name: "ABC",        // Every properties of the Person interface must be implemented
     address: "XYZ",
     greet(name: string){
         console.log(`Hello ${name}`);
