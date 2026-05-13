@@ -1,8 +1,8 @@
 // Fundamental Class Structure and access modifiers
 class Person {
-    private name: string    // variable with type 
+    private name: string    // variable with type, can not accessable outside the class
     persons: string[]
-    readonly age : number
+    readonly age : number   // can be initiated only once
 
     constructor(n : string){
         this.name = n
