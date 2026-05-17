@@ -17,7 +17,7 @@ user = {
 */
 
 
-
+// Interface actually shapes the data
 interface Person {
     name: string,
     address: string
