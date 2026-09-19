@@ -10,7 +10,6 @@ function combine(num1: Combine, num2: Combine) {
 console.log(combine(10, 10));
 
 
-
 type User = {
     name: string,
     address: string
