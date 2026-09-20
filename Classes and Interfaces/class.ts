@@ -14,7 +14,7 @@ class Person {
     }
 
     addPersons(indPerson: string){
-        this.persons.push(indPerson)
+        this.persons.push(indPerson);
     }
     totalPersons(){
         console.log(this.persons)

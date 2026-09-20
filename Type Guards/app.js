@@ -1,4 +1,13 @@
 "use strict";
+function add(a, b) {
+    // add type guards
+    if (typeof (a) == "string" || typeof (b) == "string") {
+        return a.toString() + b.toString();
+    }
+    return a + b;
+}
+console.log(add(30, 30));
+console.log(add(30, "30"));
 const personInfoA = {
     name: "Sayak"
 };
@@ -43,4 +52,4 @@ function display(vehicle, quantity) {
     }
 }
 display(c, 0); // Driving...
-display(t, 500); // Loading woods of 500...    
+display(t, 500); // Loading woods of 500...

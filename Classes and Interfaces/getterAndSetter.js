@@ -1,4 +1,6 @@
 "use strict";
+// Getter and Setter
+Object.defineProperty(exports, "__esModule", { value: true });
 class Person {
     firstName;
     lastName;
@@ -17,10 +19,11 @@ class Person {
         return this.pId;
     }
     describe() {
-        console.log(this.firstName, this.lastName, this.pId);
+        console.log(`My name is ${this.firstName}, ${this.lastName}, and person id is ${this.pId}`);
     }
 }
 const p = new Person("Mohit", "Sing", 101);
 p.describe();
 p.setPersonId = 102;
 console.log(p.getPersonId);
+//# sourceMappingURL=getterAndSetter.js.map

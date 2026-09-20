@@ -1,4 +1,17 @@
 // Fundamental of Type Guards
+type Combine = string | number;
+
+function add(a: Combine, b:Combine){
+    // add type guards
+    if(typeof(a) == "string" || typeof(b) == "string"){
+        return a.toString() + b.toString();
+    }
+    return a + b;
+}
+console.log(add(30,30));
+console.log(add(30,"30"));
+
+
 type personInfoA = {
     name: string
 }
@@ -36,8 +49,6 @@ const personInfo : personInfo = {  // do not need to write two times
 
 
 
-
-
 // Typeguard with Classes
 class Car {
     drive() : void{
@@ -55,7 +66,7 @@ class Truck {
     }
 }
 
-type Vehicle = Car | Truck         // Either Car class or Truck classc will come
+type Vehicle = Car | Truck       // Either Car class or Truck class will come
 
 const c = new Car()
 const t = new Truck()
@@ -70,4 +81,4 @@ function display(vehicle: Vehicle, quantity: number){
 }
 
 display(c, 0)      // Driving...
-display(t, 500)    // Loading woods of 500...    
+display(t, 500)    // Loading woods of 500...

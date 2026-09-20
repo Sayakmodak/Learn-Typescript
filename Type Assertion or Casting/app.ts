@@ -1,6 +1,8 @@
-//const text = <HTMLInputElement>document.getElementById("text")!;
+const text = <HTMLInputElement>document.getElementById("text")!;
+
 // OR
-const text = document.getElementById("text") ! as HTMLInputElement;
+
+const asText = document.getElementById("text") ! as HTMLInputElement;
 text.value = "Hello there";
 
 console.log(text.value);

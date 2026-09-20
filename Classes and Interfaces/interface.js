@@ -16,8 +16,9 @@ user = {
     }
 }
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 const person = {
-    name: "ABC",
+    name: "ABC", // Every properties of the Person interface must be implemented
     address: "XYZ",
     greet(name) {
         console.log(`Hello ${name}`);
@@ -25,3 +26,4 @@ const person = {
 };
 console.log("Name is ", person.name);
 console.log(person.greet("Mohit"));
+//# sourceMappingURL=interface.js.map
