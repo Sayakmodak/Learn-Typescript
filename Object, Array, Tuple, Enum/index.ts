@@ -18,18 +18,9 @@ console.log(fruits[0]);
 
 
 // tuple
-const human : {
-    name: string,
-    age: number,
-    products: [number, string]
-}= {
-    name: "Rohan",
-    age: 22,
-    products: [10, "P_name"]
-}
-
-console.log(human.age);
-console.log(human.products[1]);
+let human : [string, number, string];
+human = ["Rohan", 20, "Hooghly"];
+console.log(human[0]);
 
 
 // Enum

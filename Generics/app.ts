@@ -35,8 +35,8 @@ function createObject<T extends string, U extends number, V extends boolean>(key
         isActive: isActive
     }
 }
-console.log("From createObject ", createObject("Kishan", 20, true)); // throw an error, cuz "T" can only accept string.
-
+// console.log("From createObject ", createObject({name: "Kishan"}, 20, true)); // throw an error, cuz "T" can only accept string.
+console.log("From createObject ", createObject("Kishan", 20, true));
 
 
 //
