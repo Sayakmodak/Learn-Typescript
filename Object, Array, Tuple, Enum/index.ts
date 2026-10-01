@@ -17,6 +17,12 @@ fruits = ["apple", "mango", "pineapple"];
 console.log(fruits[0]);
 
 
+let colors : Array<string> = [];
+colors.push("White");
+colors.push("Yellow");
+console.log("@colors from generics", colors);
+
+
 // tuple
 let human : [string, number, string];
 human = ["Rohan", 20, "Hooghly"];

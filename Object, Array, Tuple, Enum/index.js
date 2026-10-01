@@ -10,6 +10,10 @@ console.log(person.name);
 let fruits;
 fruits = ["apple", "mango", "pineapple"];
 console.log(fruits[0]);
+let colors = [];
+colors.push("White");
+colors.push("Yellow");
+console.log("@colors from generics", colors);
 // tuple
 let human;
 human = ["Rohan", 20, "Hooghly"];

@@ -16,7 +16,8 @@ const boy : Person = {
     address: "ABC"
 }
 
-const personInfo : Array<Person> = [{name: "Sunil", address: "XYZ"}]
+// const personInfo : Array<Person> = [{name: "Sunil", address: "XYZ"}]
+const personInfo : Array<Person> = [boy];
 console.log(personInfo);
 
 
@@ -28,7 +29,7 @@ console.log(mergeObject({name: "Mohan"}, {age: 20}));
 
 
 // 4.
-function createObject<T extends string, U extends number, V extends boolean>(key: T, value: U, isActive: V){
+function createObject<T extends number, U extends string, V extends boolean>(key: T, value: U, isActive: V){
     return {
         key: key,
         value: value,
@@ -36,7 +37,7 @@ function createObject<T extends string, U extends number, V extends boolean>(key
     }
 }
 // console.log("From createObject ", createObject({name: "Kishan"}, 20, true)); // throw an error, cuz "T" can only accept string.
-console.log("From createObject ", createObject("Kishan", 20, true));
+console.log("From createObject ", createObject(1, "Kishan", true));
 
 
 //

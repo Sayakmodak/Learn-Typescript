@@ -30,7 +30,7 @@ console.log("As-number ", literals(10, "10", "as-number")); // 20
 
 
 // type alias / custom types
-type Anyofthem = string | number
+type Anyofthem = string | number;
 
 function combine(num1: Anyofthem, num2: Anyofthem) {
     if (typeof num1 == "number" && typeof num2 == "number") {

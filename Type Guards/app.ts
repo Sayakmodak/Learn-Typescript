@@ -49,6 +49,18 @@ const personInfo : personInfo = {  // do not need to write two times
 
 
 
+
+
+type userName = {name: String};
+type userAddress = {address: string};
+
+type user = userName & userAddress;
+
+const userInfo : user = {name: "Rohan", address: "Hooghly"};
+
+
+
+
 // Typeguard with Classes
 class Car {
     drive() : void{
