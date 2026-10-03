@@ -15,7 +15,7 @@ const AddTodo : React.FC<onAddtodoProps>= (props) => {
   }
 
   const onSubmitHandler = (event: FormEvent<HTMLFormElement>) =>{
-    event.preventDefault(); 
+    event.preventDefault();
     props.onAddtodoFn(text);
     setText("");
   }

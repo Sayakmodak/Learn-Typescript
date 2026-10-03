@@ -15,7 +15,7 @@ function App() {
 
   const deleteToItems = (todoId: string) =>{
       const updatedTodos = todo.filter((elm)=>{
-        return elm.id != todoId
+        return elm.id != todoId;
       })
       setTodo(updatedTodos)
   }
